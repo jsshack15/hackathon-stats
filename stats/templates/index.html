@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Stats of JSS Hackathon 2015</title>
+		 <!-- Compiled and minified CSS -->
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+
+	  <!-- Compiled and minified JavaScript -->
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+	          
+</head>
+<body>
+ <nav>
+    <div class="nav-wrapper blue darken-4">
+      <a href="#" class="center brand-logo" style="font-weight:300;">JSS HACKATHON 2015 STATS</a>
+    </div>
+  </nav>
+      <table class="striped">
+        <thead>
+          <tr>
+              <th data-field="name">Repository Name</th>
+              <th data-field="language">Language</th>
+              <th data-field="stars">Number of Stars</th>
+              <th data-field="commits">Number of Commits</th>
+          </tr>
+        </thead>
+
+        <tbody>
+        {% for i in content %}
+          <tr>
+            <td>{{ i.name }}</td>
+            <td>{{ i.language }}</td>
+            <td>{{ i.stargazers_count }}</td>
+            <td>{{ i.}}</td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+</body>
+</html>
